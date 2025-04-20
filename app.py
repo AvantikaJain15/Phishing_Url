@@ -37,7 +37,7 @@ def predict_url(url):
     features = extract_features(url)
     df = pd.DataFrame([features])
     prediction = model.predict(df)[0]
-    return "🚨 Phishing" if prediction == 1 else "✅ Legitimate"
+    return "✅ Legitimate" if prediction == 1 else "🚨 Phishing"
 
 # Predict for single input
 if url_input:
