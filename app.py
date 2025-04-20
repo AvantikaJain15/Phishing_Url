@@ -5,7 +5,7 @@ import joblib
 import re
 
 # Load the trained model
-model = joblib.load("final_model.pkl")  # Make sure you have this model saved
+model = joblib.load("best_phishing_model_RandomForest.pkl")  # Make sure you have this model saved
 
 # Load the encoder if needed (optional)
 # encoder = joblib.load("label_encoder.pkl")
